@@ -1,0 +1,105 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayikanying Allan</title>
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+</head>
+<body>
+    <div class="head-section">
+        <div class="container">
+            <div class="header">
+                <div class="img">
+                    <img src="{% static 'images/logo.png' %}" alt="">
+                </div>
+                <div class="profile">
+                    <div class="job">
+                        <h1>Ayikanying Allan</h1>
+                        <h1>Software Developer</h1>
+                    </div>
+                    <div class="icons">
+                        <a href="https://github.com/Ayikanying-ux?tab=repositories"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <span>allanayikanying72@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-section">
+        <div class="container">
+            <div class="about">
+                <h1>About me...</h1>
+                <p>I am a talented man who is passionate in software development with Python. I dedicate most of my time coding
+                    and learning something new. Am a freelancer who aims at providing clean, standardized and maintainable code for my clients.
+                    I started learning computer science in 2019 with Python as my first programing language. Since then I fell in love with Python
+                    because of the simple, clean and structured code it provides for one that is developing in Python.
+                    In 2021, I decided to take an online course to broaden my knowledge in Python. I took a Python developer course from 
+                    Zero To Mastery Academy which gave me all the skills to become a Python developer. The course had many sections which included:
+                    Unittest, Web Scrapping, Web Development, Test and Automation and finally Machine Learning and Data Science.
+                    This course gave a chance to explore all the possible carrier fields in Python as a developer.
+                    I was able to learn advanced topics in Python which speeds the development process which most Python developers do not have
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="service-section">
+        <div class="container">
+            <div class="prov">
+                <h1>Services offered.....</h1>
+                <p>Checkout the services I offer and check which one you need.</p>
+            </div>
+            <div class="services">
+                <div class="web">
+                    <h1>Web Development</h1>
+                </div>
+                <div class="web">
+                    <h1>Test/Automation</h1>
+                </div>
+                <div class="web">
+                    <h1>Web Scrapping</h1>
+                </div>
+                <div class="web">
+                    <h1>Unittesting</h1>
+                </div>
+                <div class="web">
+                    <h1>Software Development</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-section">
+        <div class="container">
+            <div class="contact">
+                <h1 class="text-center">Contact Me</h1>
+                    <form class ="form-group" action="" method="POST">
+                        <div class="form-group">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                {{ form.as_p }}
+
+                            </div>
+                        </div>
+                        <input type="submit">
+                    </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/b7477304ef.js" crossorigin="anonymous"></script>
+</body>
+</html>
