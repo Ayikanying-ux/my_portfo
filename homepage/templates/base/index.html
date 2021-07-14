@@ -86,7 +86,7 @@
         <div class="container">
             <div class="contact">
                 <h1 class="text-center">Contact Me</h1>
-                    <form class ="form-group" action="" method="POST">
+                    <form class ="form-group" action="{% url 'thankyou' %}" method="POST">
                         <div class="form-group">
                             {% csrf_token %}
                             <div class="form-row">

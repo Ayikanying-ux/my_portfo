@@ -14,7 +14,7 @@ def index(request):
             email = form_class.cleaned_data['email']
             message = form_class.cleaned_data['message']
             
-            return HttpResponseRedirect('base/thankyou')
+            return HttpResponseRedirect('thankyou')
     else:
         form_class = ContactForm(initial={'user':request.user,'otherstuff':'otherstuff'})
 
